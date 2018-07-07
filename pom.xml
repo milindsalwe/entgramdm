@@ -1528,14 +1528,14 @@
         <carbon.governance.version>4.7.23</carbon.governance.version>
 
         <!-- Carbon Device Management-->
-        <carbon.device.mgt.version>3.1.28</carbon.device.mgt.version>
+        <carbon.device.mgt.version>3.1.31-SNAPSHOT</carbon.device.mgt.version>
         <carbon.device.mgt.version.range>[3.1.0, 4.0.0)</carbon.device.mgt.version.range>
 
         <!-- IOT Device Management -->
         <product.iot.version>${project.version}</product.iot.version>
 
         <!-- Carbon Device Management Plugins-->
-        <carbon.device.mgt.plugin.version>4.1.6</carbon.device.mgt.plugin.version>
+        <carbon.device.mgt.plugin.version>4.1.7-SNAPSHOT</carbon.device.mgt.plugin.version>
 
         <!-- API Management -->
         <carbon.api.mgt.version>6.2.201</carbon.api.mgt.version>
@@ -1861,6 +1861,18 @@
             <id>wso2.snapshots</id>
             <name>WSO2 Snapshot Repository</name>
             <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra.snapshots</id>
+            <name>Entgra Snapshot Repository</name>
+            <url>http://104.215.188.88/repository/maven-snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>daily</updatePolicy>
