@@ -1,13 +1,8 @@
-<a href="http://wso2.com/products/iot-server/">
-<img src="http://b.content.wso2.com/sites/all/common/images/product-logos/IoT-server.svg"
-     srcset="http://b.content.wso2.com/sites/all/common/images/product-logos/IoT-server.svg@2x.png 2x"
-     alt="WSO2 IoT Server" />
-</a>
-
 # Welcome to WSO2 IoT Server
 
 <a href='https://opensource.org/licenses/Apache-2.0'><img src='https://img.shields.io/badge/License-Apache%202.0-blue.svg'></a><br/>
-<a href='https://wso2.org/jenkins/job/products/job/product-iots/'><img src='https://wso2.org/jenkins/job/products/job/product-iots/badge/icon'></a>
+
+[![pipeline status](https://gitlab.com/entgra/product-iots/badges/master/pipeline.svg)](https://gitlab.com/entgra/product-iots/commits/master)
 
 WSO2 IoT Server is a complete solution that enables device manufacturers and enterprises to connect and manage their devices, build apps, manage events, secure devices and data, and visualize sensor data in a scalable manner.
 
