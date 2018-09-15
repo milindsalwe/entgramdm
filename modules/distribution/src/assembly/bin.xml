@@ -1388,12 +1388,6 @@
             <fileMode>644</fileMode>
         </file>
         <file>
-            <source>src/core/conf/app-manager.xml</source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/conf</outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
-        </file>
-        <file>
             <source>src/core/resources/appm-tenant-conf.xml</source>
             <outputDirectory>${pom.artifactId}-${pom.version}/repository/resources</outputDirectory>
             <filtered>true</filtered>
