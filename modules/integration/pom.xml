@@ -31,10 +31,10 @@
     <name>WSO2 IoT - Integration Module</name>
     <url>http://wso2.org</url>
 
-    <modules>
+    <!--modules>
         <module>tests-common</module>
         <module>tests-integration</module>
         <module>tests-iot-web-ui</module>
-    </modules>
+    </modules-->
 
 </project>
