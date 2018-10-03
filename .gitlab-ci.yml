@@ -18,4 +18,4 @@ cache:
 build:
   stage: build
   script:
-    - 'mvn $MAVEN_CLI_OPTS test-compile'
+    - 'mvn $MAVEN_CLI_OPTS clean install'
