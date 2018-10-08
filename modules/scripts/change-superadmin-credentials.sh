@@ -2,7 +2,7 @@
 
 echo ""
 echo "----------------------------------------"
-echo "WSO2 IoT Server Super Admin Credentials Changing tool"
+echo "Entgra IoT Server Super Admin Credentials Changing tool"
 echo "----------------------------------------"
 
 
