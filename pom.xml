@@ -1640,7 +1640,7 @@
         <caramel.version>1.0.1</caramel.version>
 
         <!-- App manager version-->
-        <appmgt.feature.version>1.5.0-SNAPSHOT</appmgt.feature.version>
+        <appmgt.feature.version>1.5.0</appmgt.feature.version>
 
         <!-- Carbon Store version-->
         <carbon.store.version>1.5.1</carbon.store.version>
@@ -1903,13 +1903,9 @@
         </repository>
     </repositories>
     <distributionManagement>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <url>http://nexus.entgra.io/repository/maven-snapshots/</url>
-    	</snapshotRepository>
     	<repository>
-            <id>maven-release</id>
-            <url>http://nexus.entgra.io/repository/maven-releases/</url>
+            <id>maven-public</id>
+            <url>http://nexus.entgra.io/repository/maven-public/</url>
         </repository>
     </distributionManagement>
 </project>
