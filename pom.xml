@@ -1869,7 +1869,7 @@
                 <enabled>false</enabled>
             </releases>
     	</repository>
-	<repository>
+	    <repository>
             <id>entgra-nexus</id>
             <name>Entgra internal Repository</name>
             <url>http://nexus.entgra.io/repository/maven-public/</url>

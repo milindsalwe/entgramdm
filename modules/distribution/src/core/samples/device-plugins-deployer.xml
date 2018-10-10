@@ -27,9 +27,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.iot.devicemgt-plugins</groupId>
     <artifactId>iot-devicetype-feature-installation</artifactId>
-    <version>3.3.0</version>
+    <version>3.4.0</version>
     <packaging>pom</packaging>
-    <name>Install Android Sense, Virtual Fire Alarm, Raspberry Pi, Arduino Device Types - IoT Core</name>
+    <name>Install Virtual Fire Alarm, Raspberry Pi, Arduino Device Types - IoT Core</name>
     <url>http://wso2.org</url>
 
     <modules>
@@ -55,14 +55,6 @@
                             <publishArtifacts>true</publishArtifacts>
                             <publishArtifactRepository>true</publishArtifactRepository>
                             <featureArtifacts>
-                                <!-- Android Sense Type Features -->
-                                <featureArtifactDef>
-                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.ui.feature:${carbon.device.mgt.plugin.version}
-                                </featureArtifactDef>
-                                <featureArtifactDef>
-                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.backend.feature:${carbon.device.mgt.plugin.version}
-                                </featureArtifactDef>
-
                                 <!-- Ardino Device Type Features -->
                                 <featureArtifactDef>
                                     org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.arduino.ui.feature:${carbon.device.mgt.plugin.version}
@@ -86,6 +78,14 @@
                                 <featureArtifactDef>
                                     org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.virtualfirealarm.backend.feature:${carbon.device.mgt.plugin.version}
                                 </featureArtifactDef>
+
+                                <!-- Android Sense Device Type Features -->
+                                <featureArtifactDef>
+                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.ui.feature:${carbon.device.mgt.plugin.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.backend.feature:${carbon.device.mgt.plugin.version}
+                                </featureArtifactDef>
                             </featureArtifacts>
                         </configuration>
                     </execution>
@@ -102,16 +102,6 @@
                             <destination>\${basedir}/../wso2/components</destination>
                             <deleteOldProfileFiles>false</deleteOldProfileFiles>
                             <features>
-                                <!-- Android Sense Device Type Features -->
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.ui.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.backend.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-
                                 <!-- Ardino Device Type Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.arduino.ui.feature.group</id>
@@ -141,6 +131,16 @@
                                     <id>org.wso2.carbon.device.mgt.iot.virtualfirealarm.backend.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
+
+                                <!-- Android Sense Device Type Features -->
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.ui.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.backend.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
                             </features>
                         </configuration>
                     </execution>
@@ -157,12 +157,6 @@
                             <destination>\${basedir}/../wso2/components</destination>
                             <deleteOldProfileFiles>false</deleteOldProfileFiles>
                             <features>
-                                <!-- Android Sense Device Type UI Features -->
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.ui.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-
                                 <!-- Ardino Device Type UI Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.arduino.ui.feature.group</id>
@@ -178,6 +172,12 @@
                                 <!-- Virtual Fire Alarm Device Type UI Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.virtualfirealarm.ui.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+
+                                <!-- Android Sense Device Type UI Features -->
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.ui.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
                             </features>
@@ -196,12 +196,6 @@
                             <destination>\${basedir}/../wso2/components</destination>
                             <deleteOldProfileFiles>false</deleteOldProfileFiles>
                             <features>
-                                <!-- Android Sense Type BE Features -->
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.backend.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-
                                 <!-- Ardino Device Type BE Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.arduino.backend.feature.group</id>
@@ -217,6 +211,12 @@
                                 <!-- Virtual Fire Alarm Device Type BE Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.virtualfirealarm.backend.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+
+                                <!-- Android Sense Device Type BE Features -->
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.backend.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
                             </features>
@@ -309,6 +309,28 @@
                 <enabled>true</enabled>
                 <updatePolicy>daily</updatePolicy>
                 <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra.releases</id>
+            <name>Entgra internal Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra.snapshots</id>
+            <name>Entgra Snapshot Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
             </releases>
         </repository>
     </repositories>

@@ -2,7 +2,7 @@
 
 echo ""
 echo "----------------------------------------"
-echo "WSO2 IoT Server IP configuration tool"
+echo "Entgra IoT Server IP configuration tool"
 echo "----------------------------------------"
 
 
