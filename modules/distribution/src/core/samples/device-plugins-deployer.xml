@@ -29,7 +29,7 @@
     <artifactId>iot-devicetype-feature-installation</artifactId>
     <version>3.3.0</version>
     <packaging>pom</packaging>
-    <name>Install Virtual Fire Alarm, Raspberry Pi, Arduino Device Types - IoT Core</name>
+    <name>Install Android Sense, Virtual Fire Alarm, Raspberry Pi, Arduino Device Types - IoT Core</name>
     <url>http://wso2.org</url>
 
     <modules>
@@ -55,6 +55,14 @@
                             <publishArtifacts>true</publishArtifacts>
                             <publishArtifactRepository>true</publishArtifactRepository>
                             <featureArtifacts>
+                                <!-- Android Sense Type Features -->
+                                <featureArtifactDef>
+                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.ui.feature:${carbon.device.mgt.plugin.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.backend.feature:${carbon.device.mgt.plugin.version}
+                                </featureArtifactDef>
+
                                 <!-- Ardino Device Type Features -->
                                 <featureArtifactDef>
                                     org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.arduino.ui.feature:${carbon.device.mgt.plugin.version}
@@ -94,6 +102,16 @@
                             <destination>\${basedir}/../wso2/components</destination>
                             <deleteOldProfileFiles>false</deleteOldProfileFiles>
                             <features>
+                                <!-- Android Sense Device Type Features -->
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.ui.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.backend.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+
                                 <!-- Ardino Device Type Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.arduino.ui.feature.group</id>
@@ -139,6 +157,12 @@
                             <destination>\${basedir}/../wso2/components</destination>
                             <deleteOldProfileFiles>false</deleteOldProfileFiles>
                             <features>
+                                <!-- Android Sense Device Type UI Features -->
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.ui.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+
                                 <!-- Ardino Device Type UI Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.arduino.ui.feature.group</id>
@@ -172,6 +196,12 @@
                             <destination>\${basedir}/../wso2/components</destination>
                             <deleteOldProfileFiles>false</deleteOldProfileFiles>
                             <features>
+                                <!-- Android Sense Type BE Features -->
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.backend.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+
                                 <!-- Ardino Device Type BE Features -->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.arduino.backend.feature.group</id>
@@ -269,6 +299,16 @@
             </snapshots>
             <releases>
                 <enabled>false</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra-nexus</id>
+            <name>Entgra internal Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
             </releases>
         </repository>
     </repositories>
