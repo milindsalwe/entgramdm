@@ -502,13 +502,10 @@
                                 <!-- New App Manager Features-->
 
                                 <featureArtifactDef>
-                                    org.wso2.carbon.devicemgt:org.wso2.carbon.device.application.mgt.feature:${carbon.device.mgt.version}
-                                </featureArtifactDef>
-                                <featureArtifactDef>
                                     org.wso2.carbon.devicemgt:org.wso2.carbon.device.application.mgt.api.feature:${carbon.device.mgt.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.devicemgt:org.wso2.carbon.device.application.mgt.publisher.ui.feature:${carbon.device.mgt.version}
+                                    org.wso2.carbon.devicemgt:org.wso2.carbon.application.mgt.publisher.feature:${carbon.device.mgt.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
                                     org.wso2.carbon.devicemgt:org.wso2.carbon.device.application.mgt.server.feature:${carbon.device.mgt.version}
@@ -993,17 +990,12 @@
                                 <!-- New App Manager Features-->
 
                                 <feature>
-                                    <id>org.wso2.carbon.device.application.mgt.feature.group</id>
-                                    <version>${carbon.device.mgt.version}</version>
-                                </feature>
-
-                                <feature>
                                     <id>org.wso2.carbon.device.application.mgt.api.feature.group</id>
                                     <version>${carbon.device.mgt.version}</version>
                                 </feature>
 
                                 <feature>
-                                    <id>org.wso2.carbon.device.application.mgt.publisher.ui.feature.group</id>
+                                    <id>org.wso2.carbon.application.mgt.publisher.feature.group</id>
                                     <version>${carbon.device.mgt.version}</version>
                                 </feature>
 
@@ -2046,71 +2038,16 @@
                                     <version>${project.version}</version>
                                 </feature>
                                 <!-- End of IoTServer Features -->
-                                <!-- App management features-->
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.appmgt.core.feature.group</id>-->
-                                    <!--<version>${appmgt.feature.version}</version>-->
-                                <!--</feature>-->
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.appmgt.mdm.wso2emm.feature.group</id>-->
-                                    <!--<version>${appmgt.feature.version}</version>-->
-                                <!--</feature>-->
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.appmgt.mobile.feature.group</id>-->
-                                    <!--<version>${appmgt.feature.version}</version>-->
-                                <!--</feature>-->
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.appmgt.services.api.feature.group</id>-->
-                                    <!--<version>${appmgt.feature.version}</version>-->
-                                <!--</feature>-->
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.appmgt.mdm.osgiconnector.feature.group</id>-->
-                                    <!--<version>${carbon.device.mgt.plugin.version}</version>-->
-                                <!--</feature>-->
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.appmgt.mdm.restconnector.feature.group</id>-->
-                                    <!--<version>${carbon.device.mgt.plugin.version}</version>-->
-                                <!--</feature>-->
-								<!--<feature>-->
-									<!--<id>org.wso2.carbon.appmgt.rest.api.store.feature.group</id>-->
-									<!--<version>${appmgt.feature.version}</version>-->
-								<!--</feature>-->
-								<!--<feature>-->
-									<!--<id>org.wso2.carbon.appmgt.rest.api.publisher.feature.group</id>-->
-									<!--<version>${appmgt.feature.version}</version>-->
-								<!--</feature>-->
-								<!--<feature>-->
-									<!--<id>org.wso2.carbon.appmgt.oauth.feature.group</id>-->
-									<!--<version>${appmgt.feature.version}</version>-->
-								<!--</feature>-->
-                                <!-- End of app management features-->
-
-                                <!-- New App Manager Features-->
-
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.device.application.mgt.feature.group</id>-->
-                                    <!--<version>${carbon.device.mgt.version}</version>-->
-                                <!--</feature>-->
 
                                 <feature>
                                     <id>org.wso2.carbon.device.application.mgt.api.feature.group</id>
                                     <version>${carbon.device.mgt.version}</version>
                                 </feature>
 
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.device.application.mgt.publisher.ui.feature.group</id>-->
-                                    <!--<version>${carbon.device.mgt.version}</version>-->
-                                <!--</feature>-->
-
                                 <feature>
                                     <id>org.wso2.carbon.device.application.mgt.server.feature.group</id>
                                     <version>${carbon.device.mgt.version}</version>
                                 </feature>
-
-                                <!--<feature>-->
-                                    <!--<id>org.wso2.carbon.device.application.mgt.store.ui.feature.group</id>-->
-                                    <!--<version>${carbon.device.mgt.version}</version>-->
-                                <!--</feature>-->
 
                                 <!-- End of New App Manager Features-->
 
@@ -2735,11 +2672,6 @@
                                 </feature>
 
                                 <!-- New App Manager Features-->
-
-                                <feature>
-                                    <id>org.wso2.carbon.device.application.mgt.feature.group</id>
-                                    <version>${carbon.device.mgt.version}</version>
-                                </feature>
 
                                 <feature>
                                     <id>org.wso2.carbon.device.application.mgt.api.feature.group</id>
