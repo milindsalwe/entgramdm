@@ -1528,14 +1528,14 @@
         <carbon.governance.version>4.7.23</carbon.governance.version>
 
         <!-- Carbon Device Management-->
-        <carbon.device.mgt.version>3.2.1</carbon.device.mgt.version>
+        <carbon.device.mgt.version>3.2.2-SNAPSHOT</carbon.device.mgt.version>
         <carbon.device.mgt.version.range>[3.1.0, 4.0.0)</carbon.device.mgt.version.range>
 
         <!-- IOT Device Management -->
         <product.iot.version>${project.version}</product.iot.version>
 
         <!-- Carbon Device Management Plugins-->
-        <carbon.device.mgt.plugin.version>4.2.1</carbon.device.mgt.plugin.version>
+        <carbon.device.mgt.plugin.version>4.2.2-SNAPSHOT</carbon.device.mgt.plugin.version>
 
         <!-- API Management -->
         <carbon.api.mgt.version>6.2.201</carbon.api.mgt.version>
@@ -1880,16 +1880,6 @@
             </releases>
         </repository>
         <repository>
-            <id>entgra.releases</id>
-            <name>Entgra internal Repository</name>
-            <url>http://nexus.entgra.io/repository/maven-releases/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy>ignore</checksumPolicy>
-            </releases>
-        </repository>
-        <repository>
             <id>entgra.snapshots</id>
             <name>Entgra Snapshot Repository</name>
             <url>http://nexus.entgra.io/repository/maven-snapshots/</url>
@@ -1900,6 +1890,19 @@
             <releases>
                 <enabled>false</enabled>
             </releases>
+        </repository>
+        <repository>
+            <id>entgra.releases</id>
+            <name>Entgra internal Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
     <distributionManagement>
