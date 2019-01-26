@@ -10,13 +10,6 @@ cache:
 build:
   stage: build
   script:
-    - mvn $MAVEN_CLI_OPTS clean install -Dmaven.test.skip=true
-  tags:
-    - OracleJDK1.8
-
-test:
-  stage: test
-  script:
-    - mvn $MAVEN_CLI_OPTS test
+    - mvn $MAVEN_CLI_OPTS clean install
   tags:
     - OracleJDK1.8
