@@ -402,21 +402,21 @@
         </fileSet>
 
         <!-- Copying APP Manager Publisher and Store Jaggery apps -->
-        <fileSet>
-            <directory>
-                ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/publisher/
-            </directory>
-            <outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/publisher
-            </outputDirectory>
-            <excludes>
-                <exclude>publisherLogo/**</exclude>
-                <exclude>publisherTheme/**</exclude>
-                <exclude>publisherSite/**</exclude>
-                <exclude>footer/**</exclude>
-                <exclude>localstyles.css</exclude>
-                <exclude>**/jaggery.conf</exclude>
-            </excludes>
-        </fileSet>
+        <!--<fileSet>-->
+            <!--<directory>-->
+                <!--../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/publisher/-->
+            <!--</directory>-->
+            <!--<outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/publisher-->
+            <!--</outputDirectory>-->
+            <!--<excludes>-->
+                <!--<exclude>publisherLogo/**</exclude>-->
+                <!--<exclude>publisherTheme/**</exclude>-->
+                <!--<exclude>publisherSite/**</exclude>-->
+                <!--<exclude>footer/**</exclude>-->
+                <!--<exclude>localstyles.css</exclude>-->
+                <!--<exclude>**/jaggery.conf</exclude>-->
+            <!--</excludes>-->
+        <!--</fileSet>-->
         <fileSet>
             <directory>
                 ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/store/
@@ -1594,13 +1594,13 @@
             </outputDirectory>
             <fileMode>755</fileMode>
         </file>
-        <file>
-            <source>src/core/jaggeryapps/publisher/jaggery.conf</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/publisher/
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
+        <!--<file>-->
+            <!--<source>src/core/jaggeryapps/publisher/jaggery.conf</source>-->
+            <!--<outputDirectory>-->
+                <!--${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/publisher/-->
+            <!--</outputDirectory>-->
+            <!--<fileMode>755</fileMode>-->
+        <!--</file>-->
 
         <file>
             <source>src/core/jaggeryapps/privacy-policies/jaggery.conf</source>
