@@ -57,7 +57,7 @@
                         <property>
                             <name>carbon.zip</name>
                             <value>
-                                ${basedir}/../../distribution/target/wso2iot-${project.version}.zip
+                                ${basedir}/../../distribution/target/entgra-iot-${project.version}.zip
                             </value>
                         </property>
                         <property>
@@ -125,7 +125,7 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>org.wso2.iot</groupId>
-                                    <artifactId>wso2iot</artifactId>
+                                    <artifactId>entgra-iot</artifactId>
                                     <version>${project.version}</version>
                                     <type>zip</type>
                                     <overWrite>true</overWrite>
@@ -165,7 +165,7 @@
                             <resources>
                                 <resource>
                                     <directory>
-                                        ${basedir}/target/tobeCopied/wso2iot-${project.version}/repository/resources/security/
+                                        ${basedir}/target/tobeCopied/entgra-iot-${project.version}/repository/resources/security/
                                     </directory>
                                     <includes>
                                         <include>**/*.jks</include>
@@ -186,7 +186,7 @@
                             <resources>
                                 <resource>
                                     <directory>
-                                        ${basedir}/target/tobeCopied/wso2iot-${project.version}/repository/resources/security/
+                                        ${basedir}/target/tobeCopied/entgra-iot-${project.version}/repository/resources/security/
                                     </directory>
                                     <includes>
                                         <include>**/*.jks</include>
@@ -207,7 +207,7 @@
                             <resources>
                                 <resource>
                                     <directory>
-                                        ${basedir}/target/tobeCopied/wso2iot-${project.version}/repository/conf/axis2/
+                                        ${basedir}/target/tobeCopied/entgra-iot-${project.version}/repository/conf/axis2/
                                     </directory>
                                     <includes>
                                         <include>**/*.xml</include>
@@ -228,7 +228,7 @@
                             <resources>
                                 <resource>
                                     <directory>
-                                        ${basedir}/target/tobeCopied/wso2iot-${project.version}/repository/deployment/client/modules
+                                        ${basedir}/target/tobeCopied/entgra-iot-${project.version}/repository/deployment/client/modules
                                     </directory>
                                     <includes>
                                         <include>**/*.mar</include>

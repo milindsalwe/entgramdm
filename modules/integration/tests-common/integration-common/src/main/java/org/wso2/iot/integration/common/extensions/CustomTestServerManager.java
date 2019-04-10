@@ -146,7 +146,7 @@ public class CustomTestServerManager {
                     File[] carbonServerFiles = subFile.listFiles();
                     if (carbonServerFiles != null) {
                         for (File file : carbonServerFiles) {
-                            if (file.getName().startsWith("wso2iot")) {
+                            if (file.getName().startsWith("entgra-iot")) {
                                 return file.getAbsolutePath();
                             }
                         }
