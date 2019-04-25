@@ -417,21 +417,21 @@
                 <!--<exclude>**/jaggery.conf</exclude>-->
             <!--</excludes>-->
         <!--</fileSet>-->
-        <fileSet>
-            <directory>
-                ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/store/
-            </directory>
-            <outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/store
-            </outputDirectory>
-            <excludes>
-                <exclude>storeLogo/**</exclude>
-                <exclude>storeSite/**</exclude>
-                <exclude>base-page/**</exclude>
-                <exclude>login/**</exclude>
-                <exclude>styles-layout.css</exclude>
-                <exclude>**/jaggery.conf</exclude>
-            </excludes>
-        </fileSet>
+        <!--<fileSet>-->
+            <!--<directory>-->
+                <!--../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/store/-->
+            <!--</directory>-->
+            <!--<outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/store-->
+            <!--</outputDirectory>-->
+            <!--<excludes>-->
+                <!--<exclude>storeLogo/**</exclude>-->
+                <!--<exclude>storeSite/**</exclude>-->
+                <!--<exclude>base-page/**</exclude>-->
+                <!--<exclude>login/**</exclude>-->
+                <!--<exclude>styles-layout.css</exclude>-->
+                <!--<exclude>**/jaggery.conf</exclude>-->
+            <!--</excludes>-->
+        <!--</fileSet>-->
 
         <!-- Copying API Manager Store Jaggery app -->
         <fileSet>
@@ -1617,13 +1617,13 @@
             </outputDirectory>
             <fileMode>755</fileMode>
         </file>
-        <file>
-            <source>src/core/jaggeryapps/store/jaggery.conf</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/store/
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
+        <!--<file>-->
+            <!--<source>src/core/jaggeryapps/store/jaggery.conf</source>-->
+            <!--<outputDirectory>-->
+                <!--${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/store/-->
+            <!--</outputDirectory>-->
+            <!--<fileMode>755</fileMode>-->
+        <!--</file>-->
         <file>
             <source>src/core/jaggeryapps/windows-web-agent/jaggery.conf</source>
             <outputDirectory>
