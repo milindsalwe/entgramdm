@@ -113,59 +113,6 @@ public class QSGExecutor {
             System.exit(0);
         }
 
-
-        System.out.println("Upload the android application ");
-        //Upload the android application
-        MobileApplication application = AppOperations.uploadApplication(Constants.DeviceType.ANDROID, "con-app.apk",
-                                                                        "application/vnd.android.package-archive");
-        if (application == null) {
-            System.out.println("Unable to upload the sample android application. Terminating the IoTS QSG now.");
-            System.exit(0);
-        }
-        //Upload the assets
-        application = AppOperations.uploadAssets(Constants.DeviceType.ANDROID, application);
-        if (application == null) {
-            System.out.println(
-                    "Unable to upload the assets for sample android application. Terminating the IoTS QSG now.");
-            System.exit(0);
-        }
-
-        System.out.println("Create the android application ");
-        //Create application entry in publisher
-        status = AppOperations.addApplication("WSO2Con-Android", application, true);
-        if (!status) {
-            System.out.println("Unable to create the android mobile application. Terminating the IoTS QSG now.");
-            System.exit(0);
-        }
-
-
-        System.out.println("Upload the iOS application ");
-        //Add the iOS policy
-        status = PolicyOperations.createPasscodePolicy("ios-passcode-policy1", Constants.DeviceType.IOS);
-        if (!status) {
-            System.out.println("Unable to create the ios passcode policy. Terminating the IoTS QSG now.");
-            System.exit(0);
-        }
-
-        //Upload the ios application
-        MobileApplication iOSApplication = AppOperations.uploadApplication(Constants.DeviceType.IOS, "PNDemo.ipa","application/octet-stream");
-        iOSApplication.setVersion("1.0.0");
-        //Upload the assets
-        iOSApplication = AppOperations.uploadAssets(Constants.DeviceType.IOS, iOSApplication);
-        if (iOSApplication == null) {
-            System.out.println(
-                    "Unable to upload the assets for sample iOS application. Terminating the IoTS QSG now.");
-            System.exit(0);
-        }
-
-        System.out.println("Create the iOS application ");
-        //Create application entry in publisher
-        status = AppOperations.addApplication("WSO2Con-iOS", iOSApplication, true);
-        if (!status) {
-            System.out.println("Unable to create the iOS mobile application. Terminating the IoTS QSG now.");
-            System.exit(0);
-        }
-
         System.out.println("Exit");
     }
 }
