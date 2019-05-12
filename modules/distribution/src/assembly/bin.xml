@@ -451,16 +451,16 @@
             </excludes>
         </fileSet>
 
-        <fileSet>
-            <directory>
-                ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/social/
-            </directory>
-            <outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/social
-            </outputDirectory>
-            <excludes>
-                <exclude>**/jaggery.conf</exclude>
-            </excludes>
-        </fileSet>
+<!--        <fileSet>-->
+<!--            <directory>-->
+<!--                ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/social/-->
+<!--            </directory>-->
+<!--            <outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/social-->
+<!--            </outputDirectory>-->
+<!--            <excludes>-->
+<!--                <exclude>**/jaggery.conf</exclude>-->
+<!--            </excludes>-->
+<!--        </fileSet>-->
 
         <!-- Copying Android Mutual SSL and Windows Synapse files -->
         <fileSet>
@@ -1610,13 +1610,13 @@
             <fileMode>755</fileMode>
         </file>
 
-        <file>
-            <source>src/core/jaggeryapps/social/jaggery.conf</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/social/
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
+<!--        <file>-->
+<!--            <source>src/core/jaggeryapps/social/jaggery.conf</source>-->
+<!--            <outputDirectory>-->
+<!--                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/social/-->
+<!--            </outputDirectory>-->
+<!--            <fileMode>755</fileMode>-->
+<!--        </file>-->
         <!--<file>-->
             <!--<source>src/core/jaggeryapps/store/jaggery.conf</source>-->
             <!--<outputDirectory>-->
