@@ -22,7 +22,7 @@
 
 
 DIR="$(dirname "${BASH_SOURCE[0]}")"
-DISTRIBUTION="wso2iot-@product.version@"
+DISTRIBUTION="entgra-iot-@product.version@"
 ALLPROF=0
 BINDIR=$(pwd)
 #get the desired profile

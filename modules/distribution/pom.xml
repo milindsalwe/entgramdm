@@ -22,15 +22,15 @@
 	<parent>
 		<groupId>org.wso2.iot</groupId>
 		<artifactId>wso2iot-parent</artifactId>
-		<version>3.3.0-update1-SNAPSHOT</version>
+		<version>3.5.1-SNAPSHOT</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>wso2iot</artifactId>
+	<artifactId>entgra-iot</artifactId>
 	<packaging>pom</packaging>
-	<name>WSO2 IoT - Distribution</name>
-	<description>WSO2 IoT Distribution</description>
+	<name>Entgra IoT - Distribution</name>
+	<description>Entgra IoT Distribution</description>
 
 	<dependencies>
 		<dependency>

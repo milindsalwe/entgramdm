@@ -19,7 +19,7 @@ REM Profile creator tool for EI
 REM ---------------------------------------------------------------------------
 
 set DIR=%~dp0
-set DISTRIBUTION=wso2iot-@product.version@
+set DISTRIBUTION=entgra-iot-@product.version@
 REM get the desired profile
 echo This tool will erase all the files which are not required for the selected profile
 echo and provide you a light weight package for the target profile.
