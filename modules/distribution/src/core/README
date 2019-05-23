@@ -20,7 +20,7 @@ Installation & Running
 
 Running the IoT server
 ==================================
-1. Extract  wso2iot-@product.version@.zip and go to the extracted directory/bin.
+1. Extract entgra-iot-@product.version@.zip and go to the extracted directory/bin.
 2. Run iot-server.sh or iot-server.bat.
 3. Point your favourite browser to  https://localhost:9443/devicemgt in order to see the available device types and operations.
 4. Use the following username and password to login
@@ -33,7 +33,7 @@ Running the IoT server
 Running all runtimes (IoT, Analytics, Broker)
 ==================================================================
 
-1. Extract  wso2iot-@product.version@.zip and go to the extracted directory/bin.
+1. Extract entgra-iot-@product.version@.zip and go to the extracted directory/bin.
 2. Run broker.sh (or broker.bat), then the iot-server.sh (iot-server.bat) and finally analytics.sh (or analytics.bat).
 3. Access appropriate url for the related runtime. (For example, use  https://localhost:9443/devicemgt for the IoT Server runtime)
 

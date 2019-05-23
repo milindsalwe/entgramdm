@@ -27,9 +27,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.iot.analytics.devicemgt-plugins</groupId>
     <artifactId>analytics-devicetype-feature-installation</artifactId>
-    <version>3.3.0</version>
+    <version>3.4.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Install Virtual Fire Alarm, Raspberry Pi, Arduino Device Types - Analytics</name>
+    <name>Install Virtual Fire Alarm, Raspberry Pi, Arduino, Android Sense Device Types - Analytics</name>
     <url>http://wso2.org</url>
 
 
@@ -66,6 +66,11 @@
                                 <featureArtifactDef>
                                     org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.virtualfirealarm.analytics.feature:${carbon.device.mgt.plugin.version}
                                 </featureArtifactDef>
+
+                                <!-- Android Sense Device Type Features -->
+                                <featureArtifactDef>
+                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.iot.androidsense.analytics.feature:${carbon.device.mgt.plugin.version}
+                                </featureArtifactDef>
                             </featureArtifacts>
                         </configuration>
                     </execution>
@@ -92,6 +97,10 @@
                                 </feature>
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.iot.virtualfirealarm.analytics.feature.group</id>
+                                    <version>${carbon.device.mgt.plugin.version}</version>
+                                </feature>
+                                <feature>
+                                    <id>org.wso2.carbon.device.mgt.iot.androidsense.analytics.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
                             </features>
@@ -191,6 +200,38 @@
             <id>wso2.snapshots</id>
             <name>WSO2 Snapshot Repository</name>
             <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra-nexus</id>
+            <name>Entgra internal Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra.releases</id>
+            <name>Entgra internal Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+        <repository>
+            <id>entgra.snapshots</id>
+            <name>Entgra Snapshot Repository</name>
+            <url>http://nexus.entgra.io/repository/maven-snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>daily</updatePolicy>
