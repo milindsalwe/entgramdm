@@ -1,5 +1,3 @@
-image: maven:latest
-
 variables:
   MAVEN_CLI_OPTS: "--batch-mode"
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
@@ -12,7 +10,6 @@ cache:
 build:
   stage: build
   script:
-    - 'mvn $MAVEN_CLI_OPTS test-compile'
     - mvn $MAVEN_CLI_OPTS clean install
   tags:
     - OracleJDK1.8
