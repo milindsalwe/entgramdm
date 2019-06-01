@@ -28,7 +28,7 @@
     <!--
        Product Name
     -->
-    <Name>${product.name}</Name>
+    <Name>Entgra IoT Analytics</Name>
 
     <!--
        machine readable unique key to identify each product
