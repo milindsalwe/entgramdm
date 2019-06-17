@@ -26,17 +26,17 @@
     <!--
        Product Name
     -->
-    <Name>WSO2 Message Broker</Name>
+    <Name>Entgra IoT Message Broker</Name>
 
     <!--
        machine readable unique key to identify each product
     -->
-    <ServerKey>MB</ServerKey>
+    <ServerKey>${product.key}</ServerKey>
 
     <!--
        Product Version
     -->
-    <Version>3.4.0</Version>
+    <Version>${product.version}</Version>
 
     <!--
        Host name or IP address of the machine hosting this server
