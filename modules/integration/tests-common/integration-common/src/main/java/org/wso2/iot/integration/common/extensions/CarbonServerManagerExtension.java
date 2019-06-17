@@ -57,7 +57,7 @@ public class CarbonServerManagerExtension {
     private int portOffset = 0;
     private static final String SERVER_SHUTDOWN_MESSAGE = "Halting JVM";
     private static final String SERVER_STARTUP_MESSAGE = "Mgt Console URL";
-    private static final long DEFAULT_START_STOP_WAIT_MS = 400000L;
+    private static final long DEFAULT_START_STOP_WAIT_MS = 900000L;
     private static final String CMD_ARG = "cmdArg";
     private static int defaultHttpPort = Integer.parseInt("9763");
     private static int defaultHttpsPort = Integer.parseInt("9443");
