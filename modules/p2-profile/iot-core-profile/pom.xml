@@ -178,9 +178,6 @@
                                 <featureArtifactDef>
                                     org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.mobile.android.feature:${carbon.device.mgt.plugin.version}
                                 </featureArtifactDef>
-                                <featureArtifactDef>
-                                    org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.mobile.windows.feature:${carbon.device.mgt.plugin.version}
-                                </featureArtifactDef>
 								<featureArtifactDef>
 									org.wso2.carbon.devicemgt-plugins:org.wso2.carbon.device.mgt.notification.listener.feature:${carbon.device.mgt.plugin.version}
 								</featureArtifactDef>
@@ -1052,10 +1049,6 @@
                                 </feature>
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.mobile.android.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.mobile.windows.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
 								<feature>
@@ -2140,10 +2133,6 @@
                                     <id>org.wso2.carbon.device.mgt.mobile.android.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.mobile.windows.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
 								<feature>
 									<id>org.wso2.carbon.device.mgt.notification.listener.feature.group</id>
 									<version>${carbon.device.mgt.plugin.version}</version>
@@ -2557,10 +2546,6 @@
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
                                 <feature>
-                                    <id>org.wso2.carbon.device.mgt.mobile.windows.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-                                <feature>
                                     <id>org.wso2.carbon.apimgt.application.extension.feature.group</id>
                                     <version>${carbon.device.mgt.version}</version>
                                 </feature>
@@ -2783,10 +2768,6 @@
                                 </feature>
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.mobile.android.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.mobile.windows.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
 								<feature>
@@ -3164,10 +3145,6 @@
                                 <!--end required for context.xml-->
                                 <feature>
                                     <id>org.wso2.carbon.device.mgt.mobile.android.feature.group</id>
-                                    <version>${carbon.device.mgt.plugin.version}</version>
-                                </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.device.mgt.mobile.windows.feature.group</id>
                                     <version>${carbon.device.mgt.plugin.version}</version>
                                 </feature>
                                 <feature>
