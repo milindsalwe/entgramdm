@@ -53,11 +53,11 @@ https://entgra.atlassian.net/wiki/spaces/IoTS340/overview.
 * Support for SCEP protocol (encryption and authenticity)
 
 ### How to Run
-* Extract the downloaded entgraiot-3.4.0.zip file; this will create a folder named ‘entgraiot-3.4.0’.
+* Extract the downloaded entgraiot-3.6.0.zip file; this will create a folder named ‘entgraiot-3.6.0’.
 * IoT Server comes with three runnable components namely broker, core, and analytics. Start these components in following order by executing the following scripts:
-    * entgraiot-3.4.0/bin/broker.sh [.bat]
-    * entgraiot-3.4.0/bin/iot-server.sh [.bat]
-    * entgraiot-3.4.0/bin/analytics.sh [.bat]
+    * entgraiot-3.6.0/bin/broker.sh [.bat]
+    * entgraiot-3.6.0/bin/iot-server.sh [.bat]
+    * entgraiot-3.6.0/bin/analytics.sh [.bat]
 
 ### How to Contribute
 
