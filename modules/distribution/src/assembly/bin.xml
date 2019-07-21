@@ -356,20 +356,6 @@
                 ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/devicemgt
             </outputDirectory>
         </fileSet>
-
-        <!-- Copying windows-web-agent-->
-        <fileSet>
-            <directory>
-                ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/windows-web-agent
-            </directory>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/windows-web-agent
-            </outputDirectory>
-            <excludes>
-                <exclude>**/jaggery.conf</exclude>
-            </excludes>
-        </fileSet>
-
         <fileSet>
             <directory>
                 ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/webapps/
@@ -462,7 +448,7 @@
 <!--            </excludes>-->
 <!--        </fileSet>-->
 
-        <!-- Copying Android Mutual SSL and Windows Synapse files -->
+        <!-- Copying Android Mutual SSL Synapse files -->
         <fileSet>
             <directory>
                 ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/synapse-configs/default/api/
@@ -1624,13 +1610,6 @@
             <!--</outputDirectory>-->
             <!--<fileMode>755</fileMode>-->
         <!--</file>-->
-        <file>
-            <source>src/core/jaggeryapps/windows-web-agent/jaggery.conf</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/windows-web-agent/
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
         <file>
             <source>
                 src/core/cloud/portal/common.css
