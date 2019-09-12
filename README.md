@@ -10,8 +10,8 @@ It also offers a complete and secure enterprise mobility management (EMM/MDM) so
 
 Entgra IoT Server comes with advanced analytics, enabling users to analyze speed, proximity, and geo-fencing information of devices including details of those in motion and stationary state.
 
-Find the online documentation at : 
-https://entgra.atlassian.net/wiki/spaces/IoTS340/overview.
+Find the online documentation at :  
+https://entgra-documentation.gitlab.io/v3.7.0
 
 ### Key Features of Entgra IoT Server
 
@@ -53,11 +53,11 @@ https://entgra.atlassian.net/wiki/spaces/IoTS340/overview.
 * Support for SCEP protocol (encryption and authenticity)
 
 ### How to Run
-* Extract the downloaded entgraiot-3.6.0.zip file; this will create a folder named ‘entgraiot-3.6.0’.
+* Extract the downloaded entgraiot-3.7.0.zip file; this will create a folder named ‘entgraiot-3.7.0’.
 * IoT Server comes with three runnable components namely broker, core, and analytics. Start these components in following order by executing the following scripts:
-    * entgraiot-3.6.0/bin/broker.sh [.bat]
-    * entgraiot-3.6.0/bin/iot-server.sh [.bat]
-    * entgraiot-3.6.0/bin/analytics.sh [.bat]
+    * entgraiot-3.7.0/bin/broker.sh [.bat]
+    * entgraiot-3.7.0/bin/iot-server.sh [.bat]
+    * entgraiot-3.7.0/bin/analytics.sh [.bat]
 
 ### How to Contribute
 
