@@ -2012,5 +2012,52 @@
             <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts/storage/postgresql</outputDirectory>
         </file>
         <!-- ********************************* End of Storage PostgreSQL Copying ********************************* -->
+
+        <!-- ********************************* Start of Carbon DB Copying ********************************* -->
+        <file>
+            <source>src/core/resources/dbscripts/h2.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/db2.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/informix.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/mssql.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/mysql.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/mysql5.7.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/mysql_cluster.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/mysql_cluster5.7.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/oracle.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/oracle_rac.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <file>
+            <source>src/core/resources/dbscripts/postgresql.sql</source>
+            <outputDirectory>${pom.artifactId}-${pom.version}/dbscripts</outputDirectory>
+        </file>
+        <!-- ********************************* End of Carbon DB Copying ********************************* -->
     </files>
 </assembly>
