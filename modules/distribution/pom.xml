@@ -386,6 +386,34 @@
 				<executions>
 
 					<execution>
+						<!-- Creating Carbon schema -->
+						<id>create-carbon-schema</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<echo message="########### Create Carbon H2 Schema ###########" />
+
+								<property name="db.dir" value="target/wso2carbon-core-${carbon.kernel.version}/repository/database" />
+								<property name="userid" value="wso2carbon" />
+								<property name="password" value="wso2carbon" />
+								<property name="dbURL" value="jdbc:h2:file:${basedir}/${db.dir}/WSO2CARBON_DB;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE" />
+
+								<sql driver="org.h2.Driver" url="${dbURL}" userid="${userid}" password="${password}" autocommit="true" onerror="continue">
+									<classpath refid="maven.dependency.classpath" />
+									<classpath refid="maven.compile.classpath" />
+									<classpath refid="maven.runtime.classpath" />
+
+									<fileset file="${basedir}/../distribution/src/core/resources/dbscripts/h2.sql" />
+								</sql>
+								<echo message="##################### END ####################" />
+							</tasks>
+						</configuration>
+					</execution>
+
+					<execution>
 						<!-- Creating Device Management schema -->
 						<id>copy-con</id>
 						<phase>package</phase>
