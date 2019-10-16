@@ -1530,7 +1530,7 @@
         <!-- Carbon Device Management-->
         <carbon.device.mgt.version>4.0.0-SNAPSHOT</carbon.device.mgt.version>
 
-        <carbon.device.mgt.version.range>[4.0.0, 5.0.0]</carbon.device.mgt.version.range>
+        <carbon.device.mgt.version.range>[4.0.0, 5.0.0)</carbon.device.mgt.version.range>
 
         <!-- IOT Device Management -->
         <product.iot.version>${project.version}</product.iot.version>
