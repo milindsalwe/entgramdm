@@ -27,7 +27,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.iot.devicemgt-plugins</groupId>
     <artifactId>iot-devicetype-feature-installation</artifactId>
-    <version>3.7.0-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Install Virtual Fire Alarm, Raspberry Pi, Arduino, Android Sense Device Types - IoT Core</name>
     <url>http://wso2.org</url>
