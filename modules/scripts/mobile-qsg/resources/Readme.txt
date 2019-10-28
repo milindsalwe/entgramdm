@@ -1,5 +1,5 @@
 
-WSO2 IoTs 3.7.0 QSG Setup Guide
+WSO2 IoTs 3.8.0 QSG Setup Guide
 ---------------------------------
 
 1. Start the WSO2 IoTS server
