@@ -5,7 +5,6 @@ echo "----------------------------------------"
 echo "Entgra IoT Server IP configuration tool"
 echo "----------------------------------------"
 
-
 ##################################### IP configs related to core ####################################
 
 echo ""
@@ -29,7 +28,6 @@ while [[ -z $val2 ]]; do #if $val2 is a zero length String
     read val2;
 done
 
-
 echo "--------------------------------------"
 echo "All your " + $val1 + " IP's are replaced with " +$val2 ;
 echo "--------------------------------------"
@@ -39,11 +37,6 @@ replaceText='s/localhost/'$val1'/g'
 echo "Changing <IoT_HOME>/conf/carbon.xml"
 sed -i '' -e 's#\(<HostName>\)'$val1'\(</HostName>\)#\1'$val2'\2#g' ../conf/carbon.xml
 sed -i '' -e 's#\(<MgtHostName>\)'$val1'\(</MgtHostName>\)#\1'$val2'\2#g' ../conf/carbon.xml
-echo "Completed!!"
-
-#--------------------
-echo "Changing <IoT_HOME>/conf/app-manager.xml"
-sed -i '' -e 's#\(<IdentityProviderUrl>\)https\:\/\/'$val1'\:\${mgt\.transport\.https\.port}\/samlsso\(</IdentityProviderUrl>\)#\1'https://$val2:9443/samlsso'\2#g' ../conf/app-manager.xml
 echo "Completed!!"
 
 #--------------------
@@ -190,17 +183,12 @@ sed -i '' -e 's#\(<HostName>\)'$val1'\(</HostName>\)#\1'$val2'\2#g' ../wso2/brok
 sed -i '' -e 's#\(<MgtHostName>\)'$val1'\(</MgtHostName>\)#\1'$val2'\2#g' ../wso2/broker/conf/carbon.xml
 echo "Completed!!"
 
-
-
-
 ##################################### IP configs related to analytics ####################################
 
 echo ""
 echo ""
 echo ">>> Step 3: Change current IP address of the IoT Analytics"
 echo "-------------------------------------------------------"
-
-
 
 #--------------------
 echo "Changing  <IoT_HOME>/bin/iot-server.sh"
