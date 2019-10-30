@@ -5,7 +5,6 @@ echo "----------------------------------------"
 echo "Entgra IoT Server Super Admin Credentials Changing tool"
 echo "----------------------------------------"
 
-
 ##################################### Super Admin Credentials Change ####################################
 
 echo ""
@@ -45,23 +44,6 @@ done
 echo "Changing <IoT_HOME>/conf/cdm-config.xml"
 sed -i -e 's#\(<AdminUsername>\)'$val1'\(</AdminUsername>\)#\1'$val3'\2#g' ../conf/cdm-config.xml
 sed -i -e 's#\(<AdminPassword>\)'$val2'\(</AdminPassword>\)#\1'$val4'\2#g' ../conf/cdm-config.xml
-echo "Completed!!"
-
-echo "Changing <IoT_HOME>/conf/app-manager.xml"
-sed -i -e 's#\(<Username>\)'$val1'\(</Username>\)#\1'$val3'\2#g' ../conf/app-manager.xml
-sed -i -e 's#\(<Password>\)'$val2'\(</Password>\)#\1'$val4'\2#g' ../conf/app-manager.xml
-
-sed -i -e 's#\(<DASUsername>\)'$val1'\(</DASUsername>\)#\1'$val3'\2#g' ../conf/app-manager.xml
-sed -i -e 's#\(<DASPassword>\)'$val2'\(</DASPassword>\)#\1'$val4'\2#g' ../conf/app-manager.xml
-
-sed -i -e 's#\(<username>\)'$val1'\(</username>\)#\1'$val3'\2#g' ../conf/app-manager.xml
-sed -i -e 's#\(<password>\)'$val2'\(</password>\)#\1'$val4'\2#g' ../conf/app-manager.xml
-
-sed -i -e 's#\(<property name="Username">\)'$val1'\(</property>\)#\1'$val3'\2#g' ../conf/app-manager.xml
-sed -i -e 's#\(<property name="Password">\)'$val2'\(</property>\)#\1'$val4'\2#g' ../conf/app-manager.xml
-
-sed -i -e 's#\(<Property name="AuthUser">\)'$val1'\(</Property>\)#\1'$val3'\2#g' ../conf/app-manager.xml
-sed -i -e 's#\(<Property name="AuthPass">\)'$val2'\(</Property>\)#\1'$val4'\2#g' ../conf/app-manager.xml
 echo "Completed!!"
 
 echo "Changing <IoT_HOME>/conf/iot-api-config.xml"
