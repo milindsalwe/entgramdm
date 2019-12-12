@@ -215,6 +215,7 @@ B_SUBJ=''
 C_SUBJ=''
 A_SUBJ=''
 SERVER_ADDRESS=''
+SAN_NAMES=''
 slash='/'
 equal='='
 
@@ -250,6 +251,10 @@ buildSubject(){
         elif [ $3 = "B" ]; then
             B_SUBJ="$B_SUBJ$slash$1$equal$val"
             return
+        elif [ $3 = "S" ]; then
+            SAN_NAMES="DNS:$val$4$SAN_NAMES"
+            buildSubject 'SAN' 'SAN' 'S' ','
+            return
         else
             A_SUBJ="$A_SUBJ$slash$1$equal$val"
             return
@@ -267,6 +272,7 @@ buildSubject 'O' 'Organization' 'C'
 buildSubject 'OU' 'Organizational Unit' 'C'
 buildSubject 'emailAddress' 'Email Address' 'C'
 buildSubject 'CN' 'Common Name' 'C'
+buildSubject 'SAN' 'SAN' 'S'
 
 echo ""
 echo 'Provided IoT Core SSL Subject : ' $C_SUBJ
@@ -283,7 +289,11 @@ echo ""
 echo "Generating SSL Certificate for IoT Core"
 openssl genrsa -out ./tmp/c.key 4096
 openssl req -new -key ./tmp/c.key -out ./tmp/c.csr  -subj $C_SUBJ
-openssl x509 -req -days 730 -in ./tmp/c.csr -signkey ./tmp/c.key -set_serial 044324884 -out ./tmp/c.crt
+if [ -z $SAN_NAMES ]; then
+    openssl x509 -req -days 730 -in ./tmp/c.csr -signkey ./tmp/c.key -set_serial 044324884 -sha256 -out ./tmp/c.crt
+else
+    openssl x509 -req -extfile <(printf "subjectAltName=$SAN_NAMES") -days 730 -in ./tmp/c.csr -signkey ./tmp/c.key -set_serial 044324884 -sha256 -out ./tmp/c.crt
+fi
 
 echo "Export to PKCS12"
 openssl pkcs12 -export -out ./tmp/CKEYSTORE.p12 -inkey ./tmp/c.key -in ./tmp/c.crt -name "wso2carbon" -password pass:$SSL_PASS
