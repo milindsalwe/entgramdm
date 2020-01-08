@@ -549,20 +549,6 @@
         </fileSet>
 
         <!-- Files required to mobile-qsg -->
-        <fileSet>
-            <directory>../scripts/mobile-qsg/resources</directory>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/samples/mobile-qsg
-            </outputDirectory>
-            <includes>
-                <include>**/**</include>
-            </includes>
-            <excludes>
-                <exclude>**/*.sh*</exclude>
-            </excludes>
-        </fileSet>
-
-        <!-- Files required to mobile-qsg -->
 
         <fileSet>
             <directory>
@@ -636,22 +622,6 @@
                 <exclude>**/json_2.0.0.wso2v1.jar</exclude>
                 <exclude>**/nimbus-jose-jwt_2.26.1.wso2v2.jar</exclude>
                 <exclude>**/httpclient_4.3.2.wso2v1.jar</exclude>
-            </excludes>
-        </fileSet>
-
-        <fileSet>
-            <directory>src/core/samples</directory>
-            <outputDirectory>${pom.artifactId}-${pom.version}/samples</outputDirectory>
-            <includes>
-                <include>*/**</include>
-            </includes>
-            <fileMode>644</fileMode>
-            <excludes>
-                <exclude>**/*connectedcup-samples-deployer.xml</exclude>
-                <exclude>**/*connectedcup/pom.xml</exclude>
-                <exclude>**/*sampledevice/pom.xml</exclude>
-                <exclude>**/*sampledevice-deployer.xml</exclude>
-                <exclude>**/*device-plugins-deployer.xml</exclude>
             </excludes>
         </fileSet>
 
@@ -948,12 +918,6 @@
             </includes>
             <filtered>true</filtered>
             <fileMode>755</fileMode>
-        </fileSet>
-
-        <fileSet>
-            <directory>src/analytics/samples</directory>
-            <outputDirectory>${pom.artifactId}-${pom.version}/wso2/analytics/samples</outputDirectory>
-			<filtered>true</filtered>
         </fileSet>
 
         <fileSet>
@@ -1635,21 +1599,6 @@
             </outputDirectory>
         </file>
 
-        <!-- Copying mobile-qsg jar  -->
-        <file>
-            <source>../scripts/mobile-qsg/target/mobile-qsg.jar</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/samples/mobile-qsg
-            </outputDirectory>
-        </file>
-        <file>
-            <source>../scripts/mobile-qsg/resources/mobile-qsg.sh</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/samples/mobile-qsg
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-
         <!-- copying server scripts -->
         <file>
             <source>../scripts/change-ip.sh</source>
@@ -1689,44 +1638,6 @@
             <outputDirectory>
                 ${pom.artifactId}-${pom.version}/conf/identity
             </outputDirectory>
-        </file>
-        <!--<file>-->
-            <!--<source>-->
-                <!--../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/resources/lifecycles/MobileAppLifeCycle.xml-->
-            <!--</source>-->
-            <!--<outputDirectory>-->
-                <!--${pom.artifactId}-${pom.version}/repository/resources/lifecycles-->
-            <!--</outputDirectory>-->
-        <!--</file>-->
-        <file>
-            <source>src/core/samples/connectedcup-samples-deployer.xml</source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/samples/</outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
-        </file>
-        <file>
-            <source>src/core/samples/device-plugins-deployer.xml</source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/samples/</outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
-        </file>
-        <file>
-            <source>src/core/samples/sampledevice-deployer.xml</source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/samples/</outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
-        </file>
-        <file>
-            <source>src/core/samples/connectedcup/pom.xml</source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/samples/connectedcup/</outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
-        </file>
-        <file>
-            <source>src/core/samples/sampledevice/pom.xml</source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/samples/sampledevice/</outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
         </file>
         <!-- ********************************* End of IoT Core Profile ********************************* -->
 
