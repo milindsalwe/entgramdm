@@ -103,11 +103,6 @@
                 <exclude>**/conf/tomcat/carbon/WEB-INF/web.xml</exclude>
                 <exclude>**/bin/wso2server.sh</exclude>
                 <exclude>**/bin/wso2server.bat</exclude>
-                <exclude>
-                    **/repository/deployment/server/jaggeryapps/portal/modules/oauth/plugins/token-handler-utils.js
-                </exclude>
-                <exclude>**/repository/deployment/server/jaggeryapps/portal/modules/oauth/plugins/token-handlers.js
-                </exclude>
             </excludes>
         </fileSet>
 
@@ -518,35 +513,6 @@
                 <include>*/**</include>
             </includes>
         </fileSet>
-        <!-- Dashboard portal Jaggery app. Should be copied to <DAS_HOME>/repository/deployment/server/jaggeryapps -->
-        <fileSet>
-            <directory>
-                ../p2-profile/iot-core-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/portal
-            </directory>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal
-            </outputDirectory>
-            <includes>
-                <include>**/*</include>
-            </includes>
-            <excludes>
-                <exclude>**/configs/designer.json</exclude>
-                <exclude>**/jaggery.conf</exclude>
-            </excludes>
-        </fileSet>
-
-        <!-- Adding analytics theme to extensions -->
-        <fileSet>
-            <directory>
-                src/core/jaggeryapps/portal/themes/analytics
-            </directory>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/extensions/themes/analytics
-            </outputDirectory>
-            <includes>
-                <include>**/*</include>
-            </includes>
-        </fileSet>
 
         <!-- Files required to mobile-qsg -->
 
@@ -824,30 +790,6 @@
                 ../p2-profile/analytics-profile/target/wso2carbon-core-${carbon.kernel.version}/modules
             </directory>
             <outputDirectory>${pom.artifactId}-${pom.version}/wso2/analytics/modules</outputDirectory>
-            <includes>
-                <include>**/*</include>
-            </includes>
-        </fileSet>
-
-        <fileSet>
-            <directory>
-                ../p2-profile/analytics-profile/target/wso2carbon-core-${carbon.kernel.version}/wso2/deployment/server/jaggeryapps/portal
-            </directory>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/wso2/analytics/repository/deployment/server/jaggeryapps/portal
-            </outputDirectory>
-            <excludes>
-                <exclude>**/configs/designer.json</exclude>
-            </excludes>
-        </fileSet>
-
-        <fileSet>
-            <directory>
-                src/analytics/jaggeryapps/portal/libs/
-            </directory>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/wso2/analytics/repository/deployment/server/jaggeryapps/portal/analytics-wso2-2.0.0
-            </outputDirectory>
             <includes>
                 <include>**/*</include>
             </includes>
@@ -1159,28 +1101,6 @@
             <source>src/core/conf/tomcat/webapp-classloading-environments.xml</source>
             <outputDirectory>${pom.artifactId}-${pom.version}/conf/tomcat</outputDirectory>
         </file>
-        <file>
-            <source>src/core/jaggeryapps/portal/configs/designer.json</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/configs
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-        <file>
-            <source>src/core/jaggeryapps/portal/modules/oauth/token-handler-utils.js</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/modules/oauth
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-        <file>
-            <source>src/core/jaggeryapps/portal/modules/oauth/token-handlers.js</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/modules/oauth
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-        <!-- End of "portal" app specific modifications -->
 
         <!-- Copying config file for enabling sso in api-store-->
         <file>
@@ -1537,20 +1457,6 @@
             </outputDirectory>
             <fileMode>755</fileMode>
         </file>
-        <file>
-            <source>src/core/jaggeryapps/portal/jaggery.conf</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-        <!--<file>-->
-            <!--<source>src/core/jaggeryapps/publisher/jaggery.conf</source>-->
-            <!--<outputDirectory>-->
-                <!--${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/publisher/-->
-            <!--</outputDirectory>-->
-            <!--<fileMode>755</fileMode>-->
-        <!--</file>-->
 
         <file>
             <source>src/core/jaggeryapps/privacy-policies/jaggery.conf</source>
@@ -1558,45 +1464,6 @@
                 ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/privacy-policies/
             </outputDirectory>
             <fileMode>755</fileMode>
-        </file>
-
-<!--        <file>-->
-<!--            <source>src/core/jaggeryapps/social/jaggery.conf</source>-->
-<!--            <outputDirectory>-->
-<!--                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/social/-->
-<!--            </outputDirectory>-->
-<!--            <fileMode>755</fileMode>-->
-<!--        </file>-->
-        <!--<file>-->
-            <!--<source>src/core/jaggeryapps/store/jaggery.conf</source>-->
-            <!--<outputDirectory>-->
-                <!--${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/store/-->
-            <!--</outputDirectory>-->
-            <!--<fileMode>755</fileMode>-->
-        <!--</file>-->
-        <file>
-            <source>
-                src/core/cloud/portal/common.css
-            </source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/css
-            </outputDirectory>
-
-        </file>
-        <file>
-            <source>
-                src/core/cloud/portal/portal.js
-            </source>
-            <outputDirectory>${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/js
-            </outputDirectory>
-
-        </file>
-        <file>
-            <source>
-                src/core/cloud/portal/global-navigation.jag
-            </source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/repository/deployment/server/jaggeryapps/portal/theme/templates
-            </outputDirectory>
         </file>
 
         <!-- copying server scripts -->
@@ -1740,33 +1607,6 @@
             </outputDirectory>
         </file>
 
-        <!-- portal-->
-        <file>
-            <source>
-                src/analytics/jaggeryapps/portal/designer.json
-            </source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/
-            </outputDirectory>
-            <filtered>true</filtered>
-            <fileMode>644</fileMode>
-        </file>
-        <file>
-            <source>src/analytics/jaggeryapps/portal/modules/oauth/token-handler-utils.js</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/wso2/analytics/repository/deployment/server/jaggeryapps/portal/modules/oauth
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-        <file>
-            <source>src/analytics/jaggeryapps/portal/modules/oauth/token-handlers.js</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/wso2/analytics/repository/deployment/server/jaggeryapps/portal/modules/oauth
-            </outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-
-
         <file>
             <source>src/analytics/resources/geodashboard/events.csv</source>
             <outputDirectory>
@@ -1782,14 +1622,6 @@
             </outputDirectory>
             <filtered>true</filtered>
             <fileMode>644</fileMode>
-        </file>
-
-        <file>
-            <source>src/analytics/jaggeryapps/portal/jaggery.conf</source>
-            <outputDirectory>
-                ${pom.artifactId}-${pom.version}/wso2/analytics/repository/deployment/server/jaggeryapps/portal/
-            </outputDirectory>
-            <fileMode>755</fileMode>
         </file>
         <!-- ********************************* End of Analytics Profile ********************************* -->
 

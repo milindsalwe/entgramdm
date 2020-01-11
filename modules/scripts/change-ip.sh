@@ -66,11 +66,6 @@ sed -i -e 's/"identityProvider.*/\"identityProviderURL\"\ :\ "https\:\/\/'$val2'
 echo "Completed!!"
 
 #--------------------
-echo "Changing <IoT_HOME>/repository/deployment/server/jaggeryapps/portal/configs/designer.json"
-sed -i -e 's/"acs.*/\"acs\"\ :\ "https\:\/\/'$val2':9443\/portal\/acs\"\,/' ../repository/deployment/server/jaggeryapps/portal/configs/designer.json
-echo "Completed!!"
-
-#--------------------
 echo "Changing  <IoT_HOME>/conf/api-manager.xml"
 if grep -q '<!-- Server URL of the API key manager -->' ../conf/api-manager.xml;
 then
@@ -153,15 +148,6 @@ sed -i -e 's/-Diot.keymanager.host.*/-Diot.keymanager.host="'$val2'" \\/' ../wso
 sed -i -e 's/-Diot.gateway.host.*/-Diot.gateway.host="'$val2'" \\/' ../wso2/analytics/bin/wso2server.sh
 echo "Completed!!"
 
-#--------------------
-echo "Changing  <IoT_HOME>/wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json"
-sed -i -e 's/"identityProviderURL.*/\"identityProviderURL\"\:\"https\:\/\/'$val2':9443\/samlsso\"\,/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
-sed -i -e 's/"dynamicClientAppRegistrationServiceURL.*/\"dynamicClientAppRegistrationServiceURL\"\:\"https\:\/\/'$val2':9443\/dynamic-client-web\/register\"\,/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
-sed -i -e 's/"apiManagerClientAppRegistrationServiceURL.*/\"apiManagerClientAppRegistrationServiceURL\"\:\"https\:\/\/'$val2':9443\/api-application-registration\/register\/tenants\"\,/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
-sed -i -e 's/"tokenServiceURL.*/\"tokenServiceURL\"\: \"https\:\/\/'$val2':9443\/oauth2\/token\"/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
-sed -i -e 's/"hostname.*/\"hostname\"\: \"'$val2'\"\,/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
-echo "Completed!!"
-
 ##################################### IP configs related to broker ####################################
 echo ""
 echo ""
@@ -193,11 +179,6 @@ echo "-------------------------------------------------------"
 #--------------------
 echo "Changing  <IoT_HOME>/bin/iot-server.sh"
 sed -i -e 's/-Diot.analytics.host.*/-Diot.analytics.host="'$val2'" \\/' ../bin/iot-server.sh
-echo "Completed!!"
-
-echo "Changing  <IoT_HOME>/wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json"
-sed -i -e 's/"acs.*/\"acs\"\:\"https\:\/\/'$val2':9445\/portal\/acs\"\,/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
-sed -i -e 's/"callbackUrl.*/\"callbackUrl\"\:\"https\:\/\/'$val2':9445\/portal\"\,/' ../wso2/analytics/repository/deployment/server/jaggeryapps/portal/configs/designer.json
 echo "Completed!!"
 
 echo "Changing <IoT_HOME>/wso2/analytics/conf/carbon.xml"
