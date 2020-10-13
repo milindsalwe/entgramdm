@@ -1468,7 +1468,7 @@
 
         <!--Testing -->
         <test.framework.version>4.4.2</test.framework.version>
-        <junit.version>4.8.2</junit.version>
+        <junit.version>4.13.1</junit.version>
         <testng.version>6.8</testng.version>
         <automation.utils.version>4.4.2</automation.utils.version>
         <test.automation.emm.ui.version>1.1.0</test.automation.emm.ui.version>
